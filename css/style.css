@@ -1,51 +1,87 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(/practica-5/assets/images/RedHatDisplay-VariableFont_wght.ttf);
+  }
+
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: myFirstFont;
+    color: hsl(223, 47%, 23%);
+}
+
+body{
+    background-image: url(/practica-5/assets/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 115%;
+    background-color: hsl(225, 100%, 94%);
 }
 
 .card{
     background-image: url(/practica-5/assets/images/illustration-hero.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-color: rgb(237, 237, 237);
+    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    border-radius: 10px;
-    width: 500px;
+    border-radius: 20px;
+    width: 450px;
 }
 
 .titulo{
-    margin-top: 250px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 290px;
     text-align: center;
 }
 
 .parrafo{
-    margin-top: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin-top: 20px;
+    width: 300px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
 
 .plan{
     padding: 10px;
-    margin: 40px;
-    background-color: rgb(182, 182, 182);
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    margin-bottom: 40px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+}
+
+.imagenNota{
+    display: inline;
+    position: relative;
+    top: 45px;
+    left: 20px;
+    transform: translateY(-50%);
 }
 
 .texto1{
-    position: absolute;
-    left: 23%;
-    top: 66%;
+    display: inline;
+    position: relative;
+    left: 11%;
+    top: -10px;
 }
 
 .texto2{
-    position: absolute;
-    left: 23%;
-    top: 70%;
+    position: relative;
+    left: 27%;
+    font-weight: lighter;
+}
+
+.change{
+    position: relative;
+    left: 75%;
+    top: -33px;
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+    /* transform: translateX(-50%); */
 }
 
 button{
@@ -56,25 +92,31 @@ button{
 }
 
 .button1{
-    margin-top: 25px;
+    margin-top: 10px;
     font-size: 15px;
-    background-color: purple;
+    background-color: hsl(245, 75%, 52%);
     color:white;
     border: 0;
-    border-radius: 5px;
-    width: 400px;
-    height: 30px;
+    border-radius: 13px;
+    width: 380px;
+    height: 50px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .button2{
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 30px;
     font-size: 15px;
-    margin-bottom: 20px;
-    color:rgb(64, 64, 64);
+    background-color: transparent;
+    color:gray;
     border: 0;
-    border-radius: 5px;
-    width: 400px;
-    height: 30px;
+    border-radius: 13px;
+    width: 380px;
+    height: 50px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 .button1:hover{
